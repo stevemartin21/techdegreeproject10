@@ -1,0 +1,137 @@
+body{
+
+	background-color: #f5f5f0;
+}
+h1{
+	text-align: center;
+	font-size: .9em;
+}
+
+/*    Insert Data into */
+
+#main{
+	width:90%;
+	margin:10px auto;
+	height: 800px;	
+}
+
+/*  Employee Classes   1- Employee --Main Card 2- Photo is main photo 3- Contact --is all contact info  4- under contact are the following divs
+fullName, Email, and City */
+
+.employees{
+	margin:10px auto;
+}
+
+.profile{
+	border: 1px solid black;
+	margin: 5px;
+	height: 150px;
+	width:100%;
+	text-align: center;
+	background-color:white;
+	border-radius: 5px;
+}
+.profile:hover{
+	background-color:lightgray;
+	cursor: pointer;
+}
+ img{	
+ 	padding: 5px 5px;
+	height: 50px;
+	width:50px;
+	border-radius: 50%;
+	clear:both;
+	transition: 2s;
+}
+img:hover{
+	translate:scale(1.1);
+}
+.contact{
+	padding: 10px 10px;
+}
+.fullName{
+	font-size: 1.25em;
+	font-weight: bold;
+}
+.moreContact{
+	display:none;
+}
+/*  Modal */
+
+.modal{
+	display:none; 
+	position:fixed;
+	z-index: 1;
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	overflow:auto;
+	background-color: rgba(0,0,0, 0.5)
+}
+.modal-profile{
+	background-color: white;
+	margin:10% auto;
+	padding:10px;
+	width: 40%;
+	height: 80%;
+	box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);
+}
+.close{
+	color: #ccc;
+	float:right;
+	font-size:30px;
+}
+.close:hover, .close:focus{
+	color:#000;
+	text-decoration: none;
+	cursor: pointer;
+}
+@media only screen and (min-width: 768px){
+
+		#main {
+			width:100%;
+		}
+
+		h1{
+			font-size: 1em;
+		}
+
+		.profile{
+			width:45%;
+			float:left;
+			text-align:left;
+		}
+
+		img{
+			margin: 5px 5px;
+			float:left;
+			width: 70px;
+			height:70px;
+		}
+
+		.contact{
+			float:left;
+			margin: 5px 5px;
+		}
+
+
+}
+@media only screen and (min-width: 1024px){
+			.profile{
+			width:32%;
+			float:left;
+		}
+
+		img{
+			float:left;
+			width:100px;
+			height: 80px;
+
+		}
+
+		.contact{
+			font-size: .8em;
+		}
+}
+
