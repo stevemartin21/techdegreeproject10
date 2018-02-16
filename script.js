@@ -29,6 +29,9 @@ $.ajax({
   }
 });
 
+/*  Here is my attempt to put the data into the modal---I tried to use jquery to once you click one of the profiles to display the modal with the html data from the profile that was clicked on
+I think there are things I am not understanding conceptually Thanks for your help! */
+
 /*  Modal */
 $('profile').click( function(){
    console.log('bob');
