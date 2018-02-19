@@ -3,7 +3,7 @@ body{
 	background-color: #f5f5f0;
 }
 h1{
-	text-align: center;
+	text-align: left;
 	font-size: .9em;
 }
 
@@ -55,6 +55,8 @@ img:hover{
 }
 .moreContact{
 	display:none;
+	margin:10px ;
+	padding:10px;
 }
 /*  Modal */
 
@@ -70,14 +72,52 @@ img:hover{
 	background-color: rgba(0,0,0, 0.5)
 }
 .modal-profile{
+	font-size: .8em;
 	background-color: white;
 	margin:10% auto;
-	padding:10px;
-	width: 40%;
-	height: 80%;
+	padding:20px;
+	width: 30%;
+	height: auto;
 	box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);
+	text-align: center;
+	border-radius: 10px;
 }
+
+.modal-profile img{
+	padding: 5px 5px;
+	height: 120px;
+	width:120px;
+	border-radius: 50%;
+	clear:both;
+	transition: 2s;
+	margin: 10px auto;
+
+}
+.id{
+	padding:5px;
+}
+
+.phone{
+	padding:5px;
+}
+.address{
+	padding:5px;
+}
+
+.city{
+	padding:5px;
+}
+
+.zip{
+	padding:5px;
+}
+
+.dob{
+	padding:5px;
+}
+
 .close{
+	display: none;
 	color: #ccc;
 	float:right;
 	font-size:30px;
@@ -86,6 +126,10 @@ img:hover{
 	color:#000;
 	text-decoration: none;
 	cursor: pointer;
+}
+
+.divider{
+	margin: 10px 0px;
 }
 @media only screen and (min-width: 768px){
 
@@ -110,6 +154,24 @@ img:hover{
 			height:70px;
 		}
 
+				.modal-profile img{
+			padding: 5px 5px;
+			height: 100px;
+			width:100px;
+			border-radius: 50%;
+			clear:both;
+			transition: 2s;
+			margin: 10px auto;
+			float:none;
+
+		}
+
+		.modal-profile .contact{
+			margin: 10px 10px;
+			padding:10px 10px;
+			float:none;
+		}
+
 		.contact{
 			float:left;
 			margin: 5px 5px;
@@ -119,19 +181,20 @@ img:hover{
 }
 @media only screen and (min-width: 1024px){
 			.profile{
-			width:32%;
+			width:30%;
 			float:left;
+			margin: 10px 15px;
 		}
 
 		img{
 			float:left;
-			width:100px;
-			height: 80px;
+			width:90px;
+			height: 90px;
 
 		}
 
 		.contact{
-			font-size: .8em;
+			font-size: .9em;
 		}
 }
 
